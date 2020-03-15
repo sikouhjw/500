@@ -1,0 +1,44 @@
+\usepackage{amsmath,amssymb,newtxtext,newtxmath}
+% \setCJKmainfont[Mapping=fullwidth-stop]{Source Han Serif CN}
+\usepackage[paperwidth=14cm,paperheight=20.3cm,textwidth=357bp,hcentering,includeheadfoot,footskip=15pt,headsep=15pt,bottom=5pt,top=5pt]{geometry}
+\usepackage{enumitem,pifont,xcolor}
+\setlist[enumerate,1]{leftmargin=0pt,labelsep=0.5\ccwd,itemindent=2\ccwd,parsep=0pt,itemsep=0pt,topsep=0pt,partopsep=0pt,listparindent=2\ccwd,label=\makebox[1\ccwd][l]{\arabic*.}}
+\newenvironment{jianjie}{\begin{center} \zihao{-4}内容简介 \end{center}\begin{quotation}}{\end{quotation}}
+\newlist{xiaoti}{enumerate}{2}
+\setlist[xiaoti,1]{label=(\arabic*)}
+\setlist[xiaoti,2]{label=\protect\ding{\numexpr171+\arabic*}}
+\usepackage{theorem}
+{
+	\theoremstyle{change}
+	\theoremheaderfont{\bfseries}
+	\theorembodyfont{\normalfont}
+	\newtheorem{ti}{}[section]
+}
+\renewcommand{\theti}{\arabic{ti}.}
+
+{
+	\theoremstyle{change}
+	\theoremheaderfont{\bfseries}
+	\theorembodyfont{\normalfont}
+	\newtheorem{bianshi}{}[ti]
+}
+\renewcommand{\thebianshi}{变式 \arabic{bianshi}}
+
+\usepackage{tikz,wallpaper}
+\renewcommand{\CenterWallPaper}[2]{%
+\AddToShipoutPicture{\put(\LenToUnit{\wpXoffset},\LenToUnit{\wpYoffset}){%
+	 \parbox[b][\paperheight]{\paperwidth}{%
+		\vfill
+		\centering
+		\tikz[opacity=0.075] \node[inner sep=0pt] {\includegraphics[angle=90,width=#1\paperwidth,height=#1\paperheight,keepaspectratio]{#2}};%
+		\vfill
+	 }}
+  }
+}
+% \CenterWallPaper{1}{figure/biblatex.pdf}
+
+\edef\lim{\lim\limits}
+\def\xing{\marginpar{\color{red}*}}
+
+\title{高等数学证明题 500 例}
+\author{徐兵}
