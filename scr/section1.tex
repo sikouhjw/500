@@ -1,0 +1,127 @@
+\part{证明题}
+	\chapter{极限与连续性}
+	\section{极限}\label{sec:1.1.1}
+	\begin{ti}
+		设 $\lim_{n \to \infty} x_n = a > 0$，利用极限定义证明 $\lim_{n \to \infty} \frac{x_{n+1}}{x_n} = 1$。
+	\end{ti}
+
+	\begin{ti}
+		设数列 $\{x_n\}$ 满足 $|x_{n+1}| \leq q|x_n|$ ($n = 1$, $2$, $\cdots$)，其中 $0<q<1$。利用极限定义证明 $\lim_{n \to \infty} x_n = 0$。
+		\begin{bianshi}
+			设数列 $\{x_n\}$ 满足 $\lim_{n \to \infty} \bigl| \frac{x_{n+1}}{x_n} \bigr| = \lambda < 1$，证明 $\lim_{n \to \infty} x_n = 0$。
+		\end{bianshi}
+		\begin{bianshi}
+			设 $x_n > 0$ ($n=1$, $2$, $\cdots$)，且 $\lim_{n \to \infty} \frac{x_{n+1}}{x_n} = 0$，证明数列 $\{x_n\}$ 从某项起为单调减少。
+		\end{bianshi}
+	\end{ti}
+
+	\begin{ti}
+		利用极限定义证明：$\lim_{n \to \infty} x_n = A$ 的充分必要条件为 $\lim_{k \to \infty} x_{2k} = \lim_{k \to \infty} x_{2k+1} = A$。
+	\end{ti}
+
+	\begin{ti}
+		利用极限定义证明：单调数列 $\{x_n\}$ 收敛于 $a$ 的充分必要条件是存在子数列 $\{x_{n_k}\}$ 收敛于 $a$。
+	\end{ti}
+
+	\begin{ti}
+		设 $\lim_{n \to \infty} a_n = l$ ($l$ 为有限数或 $l = \pm \infty$)。证明
+		\begin{xiaoti}
+			\item $\lim_{n \to \infty} \frac{a_1 + a_2 + \cdots + a_n}{n} = l$；
+			\item $\lim_{n \to \infty} \frac{a_1 + 2a_2 + \cdots + na_n}{1+2+\cdots+n} = l$；
+			\item[(3)] \xing{} 当 $a_n > 0$ ($n=1$, $2$, $\cdots$) 时，$\lim_{n \to \infty} \sqrt[n]{a_1 \cdot a_2 \cdot \cdots \cdot a_n} = l$。
+		\end{xiaoti}
+	\end{ti}
+
+	\begin{ti}
+		试证下列数列 $\{x_n\}$ 存在极限，并求 $\lim_{n \to \infty} x_n$：
+		\begin{xiaoti}
+			\item $x_n = \sum_{k=1}^n \frac{k}{(k+1)!}$；
+			\item $x_n = \sum_{k=1}^n \frac{1}{1+2+\cdots+k}$。
+		\end{xiaoti}
+	\end{ti}
+
+	\begin{ti}
+		设 $a_n = \cos \frac{\varphi}{2} \cdot \cos \frac{\varphi}{2^2} \cdot \cdots \cdot \cos \frac{\varphi}{2^n}$，试证数列 $\{a_n\}$ 存在极限，并求 $\lim_{n \to \infty} a_n$。
+	\end{ti}
+
+	\begin{ti}
+		试证下列数列 $\{x_n\}$ 存在极限：
+		\begin{xiaoti}
+			\item $x_n = \bigl( 1 + \frac{1}{2} \bigr) \cdot \bigl( 1 + \frac{1}{2^2} \bigr) \cdot \cdots \cdot \bigl( 1 + \frac{1}{2^{2^n}} \bigr)$；
+			\item $x_n = \bigl( 1 + \frac{1}{2} \bigr) \cdot \bigl( 1 + \frac{1}{2^2} \bigr) \cdot \cdots \cdot \bigl( 1 + \frac{1}{2^n} \bigr)$；
+			\item $x_n = (1+a) \cdot \bigl( 1+a^2 \bigr) \cdot \cdots \cdot \bigl( 1 + a^{2^n} \bigr)$，其中 $|a| < 1$；
+			\item $x_n = (1+a) \cdot \bigl( 1+a^2 \bigr) \cdot \cdots \cdot \bigl( 1 + a^n \bigr)$，其中 $|a| < 1$。
+		\end{xiaoti}
+	\end{ti}
+
+	\begin{ti}
+		\begin{xiaoti}
+			\item 设 $a<b$, $x_0 = a$, $x_1 = b$ 及 $x_n = \frac{x_{n-1} + x_{n-2}}{2}$, $n=2$, $3$, $\cdots$。试证 $\lim_{n \to \infty} x_n = \frac{a+2b}{3}$；
+			\item 设 $a_1 = 1$, $a_2 = 2$ 且 $a_{n+2} = \frac{2a_n a_{n+1}}{a_n + a_{n+1}}$ ($n=1$, $2$, $\cdots$)。证明 $\lim_{n \to \infty} a_n$ 存在，并求 $\lim_{n \to \infty} a_n$。
+		\end{xiaoti}
+	\end{ti}
+
+	\begin{ti}
+		设 $x_1 = 1$, $x_2 = 2$, $x_{n+2} = \sqrt{x_n x_{n+1}}$ ($n=1$, $2$, $\cdots$)。证明 $\lim_{n \to \infty} x_n$ 存在，并求 $\lim_{n \to \infty} x_n$。
+	\end{ti}
+
+	\begin{ti}
+		证明下列数列 $\{x_n\}$ 存在极限，并求 $\lim_{n \to \infty} x_n$：
+		\begin{xiaoti}
+			\item $x_1 = 1$, $x_{n+1} = \sqrt{2x_n}$ ($n=1$, $2$, $\cdots$)；
+			\item $x_1 = \sqrt{2}$, $x_{n+1} = \sqrt{2+x_n}$ ($n=1$, $2$, $\cdots$)。
+		\end{xiaoti}
+	\end{ti}
+
+	\begin{ti}
+		设数列 $\{x_n\}$ 满足 $|x_{n+1} - x_n| \leq q^n$ ($n=1$, $2$, $\cdots$)，其中 $0<q<1$。证明：$\lim_{n \to \infty} x_n$ 存在。
+	\end{ti}
+
+	\begin{ti}
+		证明下列数列 $\{x_n\}$ 存在极限，并求 $\lim_{n \to \infty} x_n$：
+		\begin{xiaoti}
+			\item $x_1 = 10$, $x_{n+1} = \sqrt{6+x_n}$ ($n=1$, $2$, $\cdots$)；
+			\item $x_1 = 0$, $x_{n+1} = \sqrt{6+x_n}$ ($n=1$, $2$, $\cdots$)；
+			\item $x_1 > -6$, $x_{n+1} = \sqrt{6+x_n}$ ($n=1$, $2$, $\cdots$)。
+		\end{xiaoti}
+	\end{ti}
+
+	\begin{ti}
+		\begin{xiaoti}
+			\item 设 $x_0 > 0$, $x_{n+1} = \frac{1}{1+x_n}$ ($n=0$, $1$, $2$, $\cdots$)。证明：$\lim_{n \to \infty} x_n$ 存在，并求 $\lim_{n \to \infty} x_n$；
+			\item 设 $x_1 = 2$, $x_2 = 2 + \frac{1}{x_1}$, $\cdots$, $x_{n+1} = 2 + \frac{1}{x_n}$, $\cdots$。证明数列 $\{x_n\}$ 存在极限，并求 $\lim_{n \to \infty} x_n$。
+		\end{xiaoti}
+	\end{ti}
+
+	\begin{ti}
+		设 $0<x_1<3$, $x_{n+1} = \sqrt{x_n(3-x_n)}$ ($n=1$, $2$, $\cdots$)。证明数列 $\{x_n\}$ 的极限存在，并求此极限。
+	\end{ti}
+
+	\begin{ti}
+		设 $A>0$, $x_1>0$, $x_{n+1} = \frac{1}{2} \bigl( x_n + \frac{A}{x_n} \bigr)$ ($n=1$, $2$, $\cdots$)。试证 $\lim_{n \to \infty} x_n$ 存在，并求 $\lim_{n \to \infty} x_n$。
+	\end{ti}
+
+	\begin{ti}
+		证明下列数列 $\{x_n\}$ 存在极限，并求 $\lim_{n \to \infty} x_n$：
+		\begin{xiaoti}
+			\item $x_1>0$ 且 $x_{n+1} = \frac{3(1+x_n)}{3+x_n}$ ($n=1$, $2$, $\cdots$)；
+			\item $x_1>0$ 且 $x_{n+1} = \frac{A(1+x_n)}{A+x_n}$ ($n=1$, $2$, $\cdots$)，其中 $A>0$。
+		\end{xiaoti}
+	\end{ti}
+
+	\begin{ti}
+		设 $0<x_n<1$, $x_{n+1}^2 = -x_n^2 + 2x_n$ ($n=1$, $2$, $\cdots$)。证明 $\lim_{n \to \infty} x_n$ 存在，并求 $\lim_{n \to \infty} x_n$。
+	\end{ti}
+
+	\begin{ti}
+		设数列 $\{x_n\}$ 满足 $0<x_1<\uppi$, $x_{n+1} = \sin x_n$ ($n=1$, $2$, $\cdots$)。证明 $\lim_{n \to \infty} x_n$ 存在，并求该极限。
+		\begin{bianshi}
+			求 $\lim_{n \to \infty} \underbrace{\sin[\sin(\cdots \sin}_{(n \text{ 重})} x)]$。
+		\end{bianshi}
+	\end{ti}
+
+	\begin{ti}
+		设 $x_0 = m$, $x_{n+1} = m + \varepsilon \sin x_n$ ($n=0$, $1$, $2$, $\cdots$)。证明有 $\xi = \lim_{n \to \infty} x_n$，且数 $\xi$ 为方程
+		\[ x - \varepsilon \sin x = m\quad (0<\varepsilon<1) \]
+		的唯一根。
+	\end{ti}
