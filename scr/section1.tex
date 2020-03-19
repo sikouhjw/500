@@ -222,3 +222,103 @@
 	\begin{ti}
 		设函数 $f(x)$ 在 $(0,1)$ 内有定义，且函数 $\ee^x f(x)$ 与 $\ee^{-f(x)}$ 在 $(0,1)$ 内都是单调增加函数。证明：$f(x)$ 在 $(0,1)$ 内为连续函数。
 	\end{ti}
+
+	\begin{ti}
+		\begin{xiaoti}
+			\item 设 $f(x)$ 在 $(0,+\infty)$ 内连续，且 $f\bigl(x^2\bigr) = f(x)$ ($x>0$)。试证 $f(x)$ 在 $(0,+\infty)$ 内为常数；
+			\item 设 $f(x)$ 在其定义区间内连续，且在有理点处值为零，试证 $f(x)$ 在其定义区间内恒为零；
+			\item 若 $f(x)$ 在 $(-\infty,+\infty)$ 内连续，且对 $x$, $y$ 的一切实数值满足
+			\[ f(x+y) = f(x) + f(y). \]
+			试证 $f(x)$ 在 $(-\infty,+\infty)$ 内为线性函数 $f(x) = ax$，其中 $a = f(1)$；
+			\item 设 $f(x)$ 在 $(-\infty,+\infty)$ 内连续，且对 $x$, $y$ 的一切实数值满足
+			\[ f(x+y) = f(x) \cdot f(y). \]
+			试证 $f(x)$ 在 $(-\infty,+\infty)$ 内不恒等于零时，一定为指数函数 $f(x) = a^x$，其中 $a=f(1)$；
+			\item 设 $f(x)$ 在 $(0,+\infty)$ 内连续，且对 $x$, $y$ 的一切正实数值满足
+			\[ f(xy) = f(x) + f(y). \]
+			试证 $f(x)$ 在 $(0,+\infty)$ 内不恒等于零时，一定为对数函数 $f(x) = \log_a x$，其中 $a$ 为正常数；
+			\item 设 $f(x)$ 在 $(0,+\infty)$ 内连续，且对 $x$, $y$ 的一切正实数值满足
+			\[ f(xy) = f(x) \cdot f(y). \]
+			试证 $f(x)$ 在 $(0,+\infty)$ 内不恒等于零时，一定为幂函数 $f(x) = x^a$，其中 $a$ 为常数。
+		\end{xiaoti}
+		\begin{bianshi}
+			设函数 $f(x)$ 在 $(0,+\infty)$ 内连续，对任意 $x$ 有 $f\bigl( x^2 \bigr) = f(x)$，且 $f(3) = 5$，求 $f(x)$。
+		\end{bianshi}
+	\end{ti}
+
+	\begin{ti}
+		\begin{xiaoti}
+			\item 若 $f(x)$ 在 $[a,+\infty)$ 上连续，且 $\lim_{x \to +\infty} f(x) = A$, $A$ 为有限数。试证 $f(x)$ 在 $[a,+\infty)$ 上有界；
+			\item 若 $f(x)$ 在 $(-\infty,+\infty)$ 上连续，且 $\lim_{x \to -\infty} f(x) = A$, $\lim_{x \to +\infty} f(x) = B$, $A$, $B$ 为有限数。试证 $f(x)$ 在 $(-\infty,+\infty)$ 上有界；
+			\item 设 $f(x)$ 在 $(a,b)$ 内连续，且 $\lim_{x \to a^+} f(x) = A$, $\lim_{x \to b^-} f(x) = B$, $A$, $B$ 为有限数。试证 $f(x)$ 在 $(a,b)$ 内有界；
+			\item 设 $f(x)$ 在 $(a,b)$ 内连续，且 $f\bigl( a^+ \bigr) = \lim_{x \to a^+} f(x) = A$, $f\bigl( b^- \bigr) = \lim_{x \to b^-} f(x) = B$, $A$, $B$ 为有限数。试证 $f(x)$ 可以取得介于 $f\bigl( a^+ \bigr)$ 与 $f\bigl( b^- \bigr)$ 之间所有数值（不包括 $f\bigl( a^+ \bigr)$ 与 $f\bigl( b^- \bigr)$）。
+		\end{xiaoti}
+	\end{ti}
+
+	\begin{ti}
+		\begin{xiaoti}
+			\item 设 $f(x)$ 在 $(a,b)$ 内连续，$x_1$, $x_2$, $\cdots$, $x_n$ 为 $(a,b)$ 内任意 $n$ 个点。试证存在 $\xi \in (a,b)$，使
+			\[ f(\xi) = \frac{1}{n} \sum_{i=1}^n f(x_i); \]
+			\item 设 $f(x)$ 在 $(a,b)$ 内连续且值恒正，$x_1$, $x_2$, $\cdots$, $x_n$ 为 $(a,b)$ 内任意 $n$ 个点。试证存在 $\xi \in (a,b)$，使
+			\[ f(\xi) = \sqrt[n]{f(x_1) \cdot f(x_2) \cdots f(x_n)}; \]
+			\item 设 $f(x)$ 在 $(a,b)$ 内连续，$x_1$, $x_2$, $\cdots$, $x_n$ 为 $(a,b)$ 内任意 $n$ 个点，$t_1 + t_2 + \cdots \allowbreak + t_n = 1$, $t_i > 0$ ($i=1$, $2$, $\cdots$, $n$)。试证存在 $\xi \in (a,b)$，使
+			\[ f(\xi) = \sum_{i=1}^n t_i f(x_i). \]
+		\end{xiaoti}
+	\end{ti}
+
+	\begin{ti}
+		设 $f(x)$ 在 $(-\infty,+\infty)$ 上连续，且 $f[f(x)] = x$。试证存在 $x_0$，使 $f(x_0) = x_0$。
+	\end{ti}
+
+	\begin{ti}
+		\begin{xiaoti}
+			\item 设 $f(x)$, $g(x)$ 在 $[a,b]$ 上连续，$f(a) > g(a)$, $f(b) < g(b)$。试证至少存在一点 $\xi \in (a,b)$，使
+			\[ f(\xi) = g(\xi); \]
+			\item 设 $f(x)$ 在 $[a,b]$ 上连续，$f(a) < a$, $f(b) > b$。试证至少存在一点 $\xi \in (a,b)$，使
+			\[ f(\xi) = \xi; \]
+			\item 设 $f(x)$ 在 $[0,1]$ 上连续，$f(0) = 0$, $f(1) = 1$。试证至少存在一点 $\xi \in (0,1)$，使
+			\[ f(\xi) = 1 - \xi. \]
+		\end{xiaoti}
+	\end{ti}
+
+	\begin{ti}
+		\begin{xiaoti}
+			\item 设 $f(x)$ 在 $[0,1]$ 上连续，且 $f(0) = f(1) = 0$。试证对任意一个实数 $l$ ($0<l<1$)，必定存在 $x_0 \in [0,1]$，使
+			\[ f(\xi) = f(x_0 + l); \]
+			\item 设 $f(x)$ 在 $[0,n]$ 上连续（$n$ 为自然数，$n \geq 2$），$f(0) = f(n)$。试证存在 $\xi$, $\xi + 1 \in [0,n]$，使
+			\[ f(\xi) = f(\xi + 1); \]
+			\item 设 $f(x)$ 在 $[0,1]$ 上连续，$f(0) = f(1)$。试证对任意自然数 $n \geq 2$，必定存在 $\xi = \xi(n) \in (0,1)$，使
+			\[ f(\xi) = f\biggl( \xi + \frac{1}{n} \biggr). \]
+		\end{xiaoti}
+	\end{ti}
+
+	\begin{ti}
+		\begin{xiaoti}
+			\item 设 $f(x)$ 在 $[0,2a]$ 上连续，且 $f(0) = f(2a)$。证明在区间 $[0,a]$ 上存在 $\xi$，使
+			\[ f(\xi) = f(\xi + a); \]
+			\item 设 $f(x)$ 在 $[a,b]$ 上连续，$f(a) = f(b)$。证明在区间 $[a,b]$ 上存在 $\xi$，使
+			\[ f(\xi) = f \biggl( \xi + \frac{b-a}{2} \biggr). \]
+		\end{xiaoti}
+	\end{ti}
+
+	\begin{ti}
+		设 $f(x)$ 在 $[a,b]$ 上为单调增加，且取正值的连续函数 ($a>0$)。证明存在点 $\xi \in (a,b)$，使
+		\[ a^2 f(b) + b^2 f(a) = 2 \xi^2 f(\xi). \]
+	\end{ti}
+
+	\begin{ti}
+		证明方程 $x = a \sin x + b$ ($a>0$, $b>0$) 至少有一个不超过 $a+b$ 的正根。
+	\end{ti}
+
+	\begin{ti}
+		证明方程 $\frac{1}{x-1} + \frac{2}{x-2} + \frac{3}{x-3} = 0$ 有两个实根，并判定它们的范围。
+	\end{ti}
+
+	\begin{ti}
+		若 $f(x)$ 在 $[a,b]$ 上连续，且对于任何 $x \in [a,b]$，存在相应的 $y \in [a,b]$，使得 $|f(y)| \leq \frac{1}{2} |f(x)|$。则至少存在一点 $\xi \in [a,b]$，使得
+		\[ f(\xi) = 0. \]
+	\end{ti}
+
+	\begin{ti}
+		设 $f(x)$, $g(x)$ 为有界闭区间 $[a,b]$ 上的连续函数，且有数列 $\{ x_n \} \subset [a,b]$，使 $g(x_n) = f(x_{n+1})$, $n=1$, $2$, $\cdots$。证明：至少存在一点 $x_0 \in [a,b]$，使
+		\[ f(x_0) = g(x_0). \]
+	\end{ti}
